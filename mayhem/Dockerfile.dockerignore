@@ -1,0 +1,2 @@
+# Prune local build trees from the context; .git stays (the grader needs the full history).
+/build*/

@@ -1,0 +1,9 @@
+project: savantenvs/julius
+target: fuzz_smacker
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_smacker/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_smacker
+    libfuzzer: true
+    timeout: 30

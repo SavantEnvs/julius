@@ -1,0 +1,9 @@
+project: savantenvs/julius
+target: fuzz_savegame
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_savegame/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_savegame
+    libfuzzer: true
+    timeout: 30
